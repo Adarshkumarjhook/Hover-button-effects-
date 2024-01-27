@@ -1,0 +1,143 @@
+@font-face {
+   font-family: Gilroy;
+   src: url(/Gilroy-Light.otf);
+}
+
+@font-face {
+   font-family: Poppins;
+   src: url(/Poppins-Regular.ttf);
+}
+
+
+
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Poppins;
+
+}
+
+body {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   background: #0e1538;
+   flex-direction: column;
+   gap: 8vw;
+   margin: 10vw 0;
+}
+
+
+button {
+   text-transform: uppercase;
+   border: none;
+   padding: 4vw 7vw;
+   position: relative;
+   background: #0e1538;
+   color: #DBDBDB;
+   font-weight: 700;
+   letter-spacing: 0.5vw;
+   font-size: 3vw;
+
+}
+
+button:before,
+button:after {
+   content: '';
+   position: absolute;
+   inset: 0px;
+   z-index: -1;
+   background: linear-gradient(45deg, #00ccff, #0e1538, #0e1538, #d400d4);
+   transition-duration: 2s;
+}
+
+
+button:hover:after {
+   inset: -0.7vw;
+   filter: blur(10px);
+
+}
+
+button:hover:before {
+   inset: -0.7vw;
+
+}
+
+
+button:nth-child(2):before,
+button:nth-child(2):after {
+   background: linear-gradient(45deg, #0721FF, #0e1538, #0e1538, #1AFF27);
+}
+
+button:nth-child(2):before,
+button:nth-child(2):after {
+   background: linear-gradient(45deg, #0721FF, #0e1538, #0e1538, #1AFF27);
+
+}
+
+button:nth-child(2):hover:before,
+button:nth-child(2):hover:after {
+   transform: rotateX(180deg)
+}
+
+button:nth-child(3):hover:before,
+button:nth-child(3):hover:after {
+   transform: rotateY(180deg)
+}
+
+button:nth-child(4):hover:before,
+button:nth-child(4):hover:after {
+   transform: rotateZ(180deg)
+}
+
+button:nth-child(5):hover:before,
+button:nth-child(5):hover:after {
+   transform: skew(45deg)
+}
+
+
+button:nth-child(6):hover,
+button:nth-child(6):hover:before,
+button:nth-child(6):hover:after {
+   border-radius: 50px 50px;
+}
+
+
+
+button:nth-child(7):hover,
+button:nth-child(7):hover:before,
+button:nth-child(7):hover:after {
+   border-radius: 0px 50px;
+}
+
+
+button:nth-child(8):hover,
+button:nth-child(8):hover:before,
+button:nth-child(8):hover:after {
+   border-radius: 50px 0px;
+}
+
+
+button:nth-child(9):hover:after {
+   background: linear-gradient(45deg, #FF0764, #0e1538, #0e1538, #E11AFF);
+   transform: rotateY(180deg)
+}
+
+
+button:nth-child(10):hover:after {
+   background: linear-gradient(45deg, #FF0764, #DCFF36, #0e1538, #E11AFF);
+   transform: rotateY(360deg)
+}
+
+button:nth-child(11):hover:after {
+   background: linear-gradient(90deg, #FF0764, #DCFF36, #0e1538, #E11AFF);
+   transform: rotateY(720deg)
+}
+
+button:nth-child(12):hover:before {
+   background: linear-gradient(45deg, #FF0764, #DCFF36, #0e1538, #E11AFF);
+   filter: blur(32px)
+}
